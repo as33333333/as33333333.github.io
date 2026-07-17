@@ -66,12 +66,26 @@
       border-bottom: 1px solid #2f3035;
     }
 
-    .profile-name {
+    .profile-identity {
+      position: relative;
       align-self: center;
+    }
+
+    .profile-name {
       margin: 0;
       font-size: clamp(58px, 7vw, 92px);
       line-height: 1;
       font-weight: 760;
+    }
+
+    .profile-contact {
+      position: absolute;
+      top: calc(100% + 16px);
+      left: 2px;
+      margin: 0;
+      color: #a9a9b0;
+      font-size: 15px;
+      line-height: 1.4;
     }
 
     .profile-lines {
@@ -323,6 +337,28 @@
 
     .project-copy h3 { font-size: 25px; }
 
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      margin-top: 22px;
+      padding: 10px 15px;
+      border: 1px solid #b9d8f7;
+      border-radius: 6px;
+      color: var(--blue);
+      background: #f4f9ff;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background-color 160ms ease, border-color 160ms ease;
+    }
+
+    .project-link:hover {
+      border-color: var(--blue);
+      background: #eaf4ff;
+    }
+
     .missing-media {
       position: relative;
       display: grid;
@@ -431,7 +467,9 @@
       .masthead { padding: 0 22px; }
       .masthead-note { display: none; }
       .profile-card { grid-template-columns: 1fr; gap: 34px; padding: 48px 24px; }
-      .profile-name { align-self: start; font-size: 62px; }
+      .profile-identity { align-self: start; }
+      .profile-name { font-size: 62px; }
+      .profile-contact { position: static; margin-top: 12px; font-size: 14px; }
       .profile-lines { border-top: 1px solid #3f4046; border-left: 0; }
       .profile-line { padding: 14px 0; font-size: 20px; }
       .hero { grid-template-columns: 1fr; }
@@ -468,7 +506,10 @@
     </header>
 
     <section class="profile-card" aria-label="个人介绍">
-      <p class="profile-name">张译元</p>
+      <div class="profile-identity">
+        <p class="profile-name">张译元</p>
+        <p class="profile-contact">微信：Aura0210</p>
+      </div>
       <div class="profile-lines">
         <p class="profile-line"><strong>前小米产品经理</strong></p>
         <p class="profile-line">AI Coding 全栈开发中</p>
@@ -533,6 +574,7 @@
             <span class="number">02 / 互动游戏</span>
             <h3>心灵奇旅</h3>
             <p>面向自我觉察的心灵探索创作互动游戏，用剧情选择与创作任务，陪用户看见并表达内心。</p>
+            <a class="project-link" href="https://as33333333.github.io/top-floor-fairybook/" target="_blank" rel="noopener noreferrer">查看项目 ↗</a>
           </div>
         </article>
 
@@ -542,8 +584,9 @@
           </div>
           <div class="project-copy">
             <span class="number">03 / 内容分析</span>
-            <h3>自媒体爆款拆解</h3>
+            <h3>小红书爆款拆解</h3>
             <p>对爆款内容进行数据、结构与商业表现的对比分析，输出更贴合创作者的选题与优化建议。</p>
+            <a class="project-link" href="https://as33333333.github.io/redboom/index.html" target="_blank" rel="noopener noreferrer">查看项目 ↗</a>
           </div>
         </article>
 
@@ -559,6 +602,7 @@
             <span class="number">04 / 效率工具</span>
             <h3>日程任务管理</h3>
             <p>整合待办任务、专注计时、时间分配分析与日历视图，让用户从“记下任务”进一步走到“真正推进”。</p>
+            <a class="project-link" href="https://as33333333.github.io/ios-schedule-todo-app/" target="_blank" rel="noopener noreferrer">查看项目 ↗</a>
           </div>
         </article>
 
@@ -570,6 +614,7 @@
             <span class="number">05 / 产品工作流</span>
             <h3>产品工作台</h3>
             <p>从产品思考、需求澄清、PRD 到开发拆解的闭环工作流，把模糊想法持续推进为可落地方案。</p>
+            <a class="project-link" href="https://as33333333.github.io/prd-agent-workbench/" target="_blank" rel="noopener noreferrer">查看项目 ↗</a>
           </div>
         </article>
 
@@ -581,6 +626,7 @@
             <span class="number">06 / 创作工具</span>
             <h3>小红书图文模板编辑器</h3>
             <p>提供精美图文模板、可视化编辑与文本润色能力，帮助创作者更快完成统一且有质感的内容。</p>
+            <a class="project-link" href="https://as33333333.github.io/xhs-template-generator/" target="_blank" rel="noopener noreferrer">查看项目 ↗</a>
           </div>
         </article>
       </div>
