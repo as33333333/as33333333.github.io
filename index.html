@@ -217,6 +217,12 @@
       line-height: 1.15;
     }
 
+    .capability-title {
+      flex-shrink: 0;
+      font-size: 38px;
+      white-space: nowrap;
+    }
+
     .section-head p {
       max-width: 440px;
       margin: 0;
@@ -481,6 +487,7 @@
       .section-head { display: block; }
       .section-head p { margin-top: 16px; }
       h2 { font-size: 34px; }
+      .capability-title { font-size: 22px; }
       .feature-grid, .press { grid-template-columns: 1fr; }
       .feature-copy { border-top: 1px solid var(--line); border-left: 0; }
       .project-grid { grid-template-columns: 1fr; }
@@ -561,7 +568,7 @@
 
     <section class="section">
       <div class="section-head">
-        <h2>五个小作品，一条完整能力链。</h2>
+        <h2 class="capability-title">五个小作品，一条完整能力链。</h2>
         <p>从用户洞察、产品结构、交互设计到前端实现，用 AI Coding 快速验证产品假设。</p>
       </div>
 
